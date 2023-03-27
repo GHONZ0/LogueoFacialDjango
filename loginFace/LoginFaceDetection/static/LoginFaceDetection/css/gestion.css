@@ -1,0 +1,95 @@
+body{
+  background-image: url('https://www.eff.org/files/banner_library/whyfacebanner.png');
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  align-items: center;   
+}
+
+.ahref a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  width: 250px;
+  height: auto;
+  background-color: #141414;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  margin: auto;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 9px 5px grey;
+}
+.container h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container img{
+  height: 120px;
+  width: 120px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 6px 1px grey;
+}
+
+.ahref {
+  height: 20px;
+  background: linear-gradient(70deg, rgba(34, 3, 85, 0.555), rgba(70, 33, 131, 0.555), rgba(66, 20, 141, 0.555));
+  background-repeat: no-repeat;
+  /*background-color: rgba(50, 3, 126, 0.555);*/
+  margin-top: 10px;
+  text-align: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 7px;  
+}
+
+.container a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+form {
+  width: 250px;
+  height: auto;
+  background-color: #141414;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  margin: auto;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 0px 0px 9px 5px grey;
+}
+
+form h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form img{
+  height: 120px;
+  width: 120px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 6px 1px grey;
+}
+
+h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input {
+  width: 90%;
+  height: 25px;
+  margin-bottom: 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: black;
+}

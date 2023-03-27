@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'LoginFaceDetection/css/gestion.css' %}">
+    <link rel="icon" href="{% static 'LoginFaceDetection/img/logo-nav.jpg' %}">
+
+    <title>Registro Facial</title>
+</head>
+<body>
+    <div class="panel-form">
+        {% if messages %}
+            <div class="row">
+                {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}" role="alert">
+                    <h3 style="color: white;font-weight: bold;">{{ message }}</h3>
+                </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+        <form action="/cap_face/" method="POST">
+            {% csrf_token %} 
+            <h1>Regístrate</h1>
+            <h4>Registro facial</h4> 
+            <img src="https://www.iafisgroup.com/wp-content/uploads/2021/04/idemia-facial-recognition-ranked-1-nist-frvt-test-1024x800.jpg" alt="">
+
+            <input type="text" name="usuario" placeholder="Usuario" required style="margin-bottom: 10px;color: black;">
+
+            <input type="password" name="password"maxlength="10" placeholder="Contraseña" required style="margin-bottom: 10px;color: black;">
+            
+            <input type="submit" value="Registrar facial" style="width: 50%;background:linear-gradient(70deg, rgba(156, 64, 2, 0.555), rgba(143, 4, 4, 0.555), rgba(129, 3, 51, 0.555));height: 30px;border: none;border-radius: 5px;color: #fff;cursor: pointer;margin-bottom: 20px;margin-top: 15px;">
+
+            <div class="ahref">
+                <a href="{% url 'sesion_facial' %}" style="color: #fff;text-decoration: none;">Iniciar Sesión</a>
+            </div>
+            <div class="ahref">
+                <a href="{% url 'home' %}" style="color: #fff;text-decoration: none;">Home</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
